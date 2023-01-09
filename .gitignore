@@ -16,4 +16,5 @@
 .DS_Store
 
 .vscode/
+.vscode
 *json

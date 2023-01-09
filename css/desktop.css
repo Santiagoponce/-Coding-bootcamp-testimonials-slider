@@ -20,6 +20,13 @@ main
     align-self: center;
 }
 
+.testimonyCard__quoteDecoration
+{
+    max-inline-size: 20%;
+    align-self: center;
+    position: relative;
+    top:-12rem;
+}
 .testimonyCard__ftrDecoration
 {
     max-inline-size: 100%;
@@ -31,6 +38,15 @@ main
 {
     flex-direction: row-reverse;
  
+}
+
+.testimonyCard__slide
+{
+    align-self: center;    
+    position: absolute;
+    right: 35%;
+    bottom: 11%;
+
 }
 
 .testimonyCard__testimony

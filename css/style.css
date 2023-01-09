@@ -30,7 +30,9 @@ main
 
 .testimonyCard__slide
 {
-    position: absolute;
+    align-self: center;    
+    position: relative;
+    bottom: 7rem;
     
     display: flex;
     justify-content: space-around;
@@ -110,7 +112,9 @@ button
     
     .testimonyCard__rol
     {
-        color: var(--Grayish_Blue);   
+        color: var(--Grayish_Blue); 
+        font-weight: 500;
+  
     }
 
 
