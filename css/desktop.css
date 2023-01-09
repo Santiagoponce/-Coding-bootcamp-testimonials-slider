@@ -1,0 +1,59 @@
+@media screen and (min-width:60em)
+{
+    body
+{
+    min-height: 100vh;
+}
+
+
+main
+{
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 100vh;
+}
+
+
+.testimonyCard__bgDecoration
+{
+    max-inline-size: 100%;
+    align-self: center;
+}
+
+.testimonyCard__ftrDecoration
+{
+    max-inline-size: 100%;
+    align-self: flex-end;
+}
+/*styles for cards*/
+
+.testimonyCard
+{
+    flex-direction: row-reverse;
+ 
+}
+
+.testimonyCard__testimony
+    {
+        text-align: justify;
+        font-weight: 300;
+        max-inline-size:33ch;
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+        position: relative;
+        left: 10rem;
+    }
+    .testimonyCard__profileInfo
+    {
+        display: flex;
+        font-size: 1.3rem;
+        align-items: center;
+      
+    }
+    .testimonyCard__name
+    {
+     margin-inline-end:.5rem;
+    }
+    
+}

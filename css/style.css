@@ -5,55 +5,142 @@
 }
 
 
+
 body
 {
     background-color: white;
-    min-height: 100vh;
-    display: flex;
+    font-family: 'Inter', sans-serif;
 }
 
-
-.testimonyCard
+/*  Styles for commons parts of card*/
+main
 {
     display: flex;
     flex-direction: column;
-    height: auto;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2rem;
-
+    justify-content: space-between;
+    min-height: 100vh;
+    position: relative;
 }
 
 .testimonyCard__bgDecoration
 {
-    z-index: 0;
     max-inline-size: 100%;
-    top: 0;
-
+    margin: 2rem;
 }
 
-.testimonyCard__profilePic
+.testimonyCard__slide
 {
+    position: absolute;
+    
+    display: flex;
+    justify-content: space-around;
+    box-shadow:-25px 0px 100px rgba(0, 0, 0, 0.603);
+    width: 85px;
+    height: 45px;
+    border-radius: 50px;
     z-index: 1;
+    background-color: rgb(255, 255, 255);
+}
+button
+{
+    border: none;
+    background-color: transparent;
+}
+
+.testimonyCard__ftrDecoration
+{
     max-inline-size: 100%;
-    justify-self: flex-start;
 }
 
 .testimonyCard__quoteDecoration
 {
-
-}
-.testimonyCard__quote
-{
-
-}
-
-.testimonyCard__name
-{
-
+    max-inline-size: 20%;
+    align-self: center;
+    position: relative;
+    top:-5rem;
 }
 
-.testimonyCard__rol
-{
+/* styles for dynamic-content card*/
+
+    .testimonyCard
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+    }
+
+    .testimonyCard__profilePic
+    {
+        block-size: auto;
+        max-inline-size:65%;
+        object-fit: cover;
+        border-radius: 7px;
+    }
     
+    .testimonyCard__testimony
+    {
+        color: var(--Dark_Blue);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        font-weight: 300;
+        max-inline-size:29ch;
+        line-height: 1.5rem;
+
+        position: relative;
+        top:-2rem;
+    }
+
+    .testimonyCard__profileInfo
+    {
+        margin-top: 1rem;
+      
+    }
+    .testimonyCard__name
+    {
+        color: var(--Dark_Blue);
+        font-weight: 700;
+        line-height: 1.5rem;
+    }
+    
+    .testimonyCard__rol
+    {
+        color: var(--Grayish_Blue);   
+    }
+
+
+
+
+
+
+/*styles and animations to apply with js*/
+.inactive
+{
+    opacity: 0;
 }
+
+@keyframes fadeOut
+{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+@keyframes translateX {
+    from{}
+    to{transform:translateX(300px)}
+}
+@keyframes translate-X {
+    from{}
+    to{transform:translateX(-300px)}
+}
+
+@keyframes translateY {
+    from{}
+    to{transform:translateY(300px)}
+}
+
